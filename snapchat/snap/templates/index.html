@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensFlow Gallery</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="brand">LensFlow</div>
+        <input class="search" type="text" placeholder="Search photos...">
+    </header>
+
+    <section class="grid-gallery">
+        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2" alt="">
+        <img src="https://images.unsplash.com/photo-1763246169636-4127600060b6" alt="">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" alt="Cupcake">
+        <img src="https://images.unsplash.com/photo-1571091799989-e88304d6aed3" alt="">
+        <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572" alt="">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="">
+        <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc" alt="">
+    </section>
+
+
+    <div class="lightbox" id="lightbox">
+        <span class="exit" id="exit">&times;</span>
+        <img id="lightImg" src="">
+    </div>
+     <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
